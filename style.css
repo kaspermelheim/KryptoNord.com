@@ -252,7 +252,7 @@ html {
 #footer {
   background-color: rgb(88, 86, 129);
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 200px;
   margin-left: -85px;
   margin-right: -75px;
   height: 110px;
@@ -289,12 +289,6 @@ html {
   background-color: rgb(104, 112, 158);
 }
 
-#frontmarquee2 {
-  color: rgb(88, 86, 129);
-  font-size: 12px;
-  font-weight: bold; 
-  margin-top: 250px;
-}
 
 .tooltip {
   position: relative;
