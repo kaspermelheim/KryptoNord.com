@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>greenwear</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+        </style>
+</head>
+
+<body>
+    <div class="navbar navbar-static-top" style="@media (max-width: 720px) {  .navbar navbar-static-top {display:none;}}">
+        <div class="container">
+        <ul class="nav navbar-nav">
+            <li style="background-color:rgb(180, 219, 255)"><a href="index.html" style="font-weight: bold;">greenwear</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+                <li><a onclick="scrollFunc()"><span class="glyphicon glyphicon-phone"></span></a></li>
+                <li><a onclick="scrollFunc()"><span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="grid-container-element" style="grid-template-columns: 1fr;margin-top: -100px; ">
+        <div class="grid-child-element-purple">
+            <p><span style="background-color: black;color:white;padding:5px; font-family: 'Times New Roman', Times, serif;font-size: 3.5vw;text-align: right;">brands.</span>
+        </div>
+        
+    </div>
+    <br><br><br><br>
+
+    
+    <div class="grid-container-element" style="grid-template-columns: 1fr">
+        
+        <div class="grid-child-element-green">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for brands...">
+
+            <table id="myTable" style="font-size: 1.15vw;">
+            <tr class="header">
+                <th style="width:30%;">Name</th>
+                <th style="width:60%;">Info</th>
+                <th style="width:30%;">Rank</th>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.3vw;">Louis Vuitton
+                    <img id="headerimg" src="images\lv.png" alt="People">
+                </td>
+                <td>&#8226; 3000 employees<br>
+                    &#8226; 800 stores<br>
+                    &#8226;   Notable actions for the climate: x<br>
+                    &#8226;   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <br><br><br>
+                    Click <a style="font-weight: bold"; href="https://www.louisvuitton.com/">here</a> to go to their store
+                </td>
+                <td style="float: right;">1</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.3vw;">Patagonia
+                    <img id="headerimg" src="images\patagonia.png" alt="People">
+                </td>
+                <td>&#8226; 2500 employees<br>
+                    &#8226; 200 stores<br>
+                    &#8226;   Notable actions for the climate: x<br>
+                    &#8226;   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <br><br><br>
+                    Click <a style="font-weight: bold"; href="https://www.louisvuitton.com/">here</a> to go to their store
+                </td>
+                <td style="float: right;">2</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer id="footer">
+        <div style="padding: 20px; width: 50%; margin:auto;">
+            <h1>Contact</h1>
+            <p>hi@greenwear.com</p>
+            <p>+47 123 45 678</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        
+
+
+        // When the user clicks on the button, scroll to the bottom of the document
+        function scrollFunc() {
+            var el = document.getElementById("footer");
+            el.scrollIntoView();
+      }
+    </script>
+</body>
+</html>
