@@ -1,2 +1,7 @@
-# INFO263
-INFO263 Seminar Task
+INFO263: Interaksjonsdesign og prototyping
+
+Theme: Sustainability
+
+Website for displaying sustainable clothing brands.
+
+Access website at: https://kaspermelheim.github.io/
