@@ -4,12 +4,148 @@
     <meta charset="UTF-8">
     <title>KryptoNord | Norske Kryptobørser</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Alt du trenger å vite om krypto, ulike kryptobørser og populære kryptovalutaer.">
+    <meta name="description" content="KryptoNord har alt du trenger å vite om krypto, kryptobørser (norske og internasjonale) og populære kryptovalutaer.">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <style>
+
+        @media (max-width: 1334px) {        
+            body {
+                background-size: 1300px;
+            }
+            #header h1 {
+                font-size: 25px;
+            }
+            #header p {
+                font-size: 15px;
+            }
+            #disc {
+                width: 250px;
+                height: 250px;
+                margin-left: 85px;
+            }
+          }
+
+      .main {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        
+      }
+      .d1 {
+        position: absolute;
+        background-image: url(stock_market.jpg);
+        background-size: 1200px 750px;
+      
+        height: 25vh;
+        width: 15vw;
+      
+        background-position: 0 50%;
+      
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+        top: 50%;
+        left: 10vw;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: dd1 10s 1, dd12 10s 1;
+        animation-delay: 4s, 14s;
+      }
+      .d2 {
+        position: absolute;
+        background-image: url(stock_market.jpg);
+        background-size: 1200px 750px;
+
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+      
+        height: 50vh;
+        width: 20vw;
+      
+        background-position: -10vw 50%;
+        left: 20vw;
+      
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        animation: dd2 10s 2;
+        animation-delay: 4s;
+      }
+      .d3 {
+        position: absolute;
+        background-image: url(stock_market.jpg);
+        background-size: 1200px 750px;
+        overflow: hidden;
+      
+        height: 65vh;
+        width: 30vw;
+        left: 17vw;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+        background-position: -35vw 50%;
+      
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        animation: dd3 10s 2;
+        animation-delay: 4s;
+      }
+      .d4 {
+        position: absolute;
+        overflow: hidden;
+        background-image: url(stock_market.jpg);
+        background-size: 1200px 750px;
+
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+      
+        height: 80vh;
+        width: 20vw;
+        left: 45vw;
+        background-position: -70vw 50%;
+      
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        animation: dd4 10s 2;
+        animation-delay: 4s;
+      }
+      
+      @keyframes dd1 {
+        0% {
+        }
+        50% {
+          width: 60vw;
+        }
+      }
+      @keyframes dd12 {
+        0% {
+        }
+        50% {
+          background-position: Calc(0vw - 40px) 50%;
+        }
+      }
+      @keyframes dd2 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-10vw - 40px) 50%;
+        }
+      }
+      @keyframes dd3 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-35vw - 40px) 50%;
+        }
+      }
+      @keyframes dd4 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-70vw - 40px) 50%;
+        }
+      }
+  
+    </style>
   </head>
 
   <body>
@@ -39,13 +175,11 @@
           
             <ul class="slide">
               <li><a href="index.html">&#127968; Hjem</a></li> 
-              <li><a href="Andre-Kryptobørser.html">&#128186; Andre børser</a></li>
               <li><a href="hva_er_krypto.html"> &#10067; &nbsp;Hva er krypto</a></li>
+              <li><a href="Andre-Kryptobørser.html">&#128187; Kryptobørser</a></li>
               <li><a href="omoss.html">&#128119; Om oss</a></li>
             </ul>
-          
           </nav> 
-        
       </li>
     </ul>
 
@@ -57,9 +191,9 @@
     </div>
 
     <div id="header">
-      <h1>Om oss</h1>
-      <p id="headertext">Info om KryptoNord<br> og målet til <br>nettsiden.</p>
-      <img id="arrow" onclick="clicked()" src="downpng.png" alt="Arrow down button">
+        <h1>Om oss</h1>
+        <p id="headertext">Informasjon om KryptoNord<br> og målet til nettsiden.</p>
+        <img id="arrow" onclick="clicked()" src="downpng.png" alt="Arrow down button">
     </div>
 
 
@@ -67,18 +201,55 @@
     <div id="wrapper">
       <div id="wrapper-2">  
         <br>
-        <div id="child" style="margin-top: 300px;">
+        <div id="child" style="margin-top: 25vw;">
           <img style="width: 160px; float: right;" src="verified_checkmark.png" alt="Blue Checkmark">
-          <h2 id="h2id">Kommer snart!</h2>
+          <h2 id="h2id">Hva er kryptovaluta?</h2>
           <br>
-          <p>Her vil det bli lagt ut masse bra info...</p>
+          <p>
+          Kryptovaluta er et <span style="font-weight: bold;">digitalt betalingssystem</span> som ikke er avhengig av banker for å bekrefte transaksjoner. 
+          Det er et P2P system (peer-to-peer) som kan gjøre det mulig for alle hvor som helst å sende og motta betalinger. 
+          <br>Kryptovalutabetalinger eksisterer som digitale oppføringer til en online database som beskriver spesifikke transaksjoner.
+          Dette skiller seg fra pengene vi bruker i den fysiske verdenen, som vi bærer fysisk med oss og utveksler.
+          <br><br>
+          Når du overfører kryptovaluta, blir transaksjonene oppført i et register som alle kan søke opp i og finne addresser og transaksjoner.
+          Kryptovaluta kan lagres på digitale lommebøker eller kryptobørser.
+          Som navnet tilsier så er det kryptering inne i bildet for å sørge for sikker overførsel og larging av kryptovaluta. 
+          <br>Krypto er bygget på en krypteringsalgoritme som i dag ses på som trygg og som enda ikke har blitt brutt gjennom av testere og hackere.
+          <br><br>
+          Det finnes mange ulike kryptovalutaer for ulike formål. De aller mest kjent er Bitcoin og Ethereum, BTC og ETH for kort.
+          Bitcoin var først og ble laget i 2009 og er fortsatt den mest kjente i dag. <br>
+          Interessen folk har for krypto kommer av ulike grunner. Noen bruker det som betalingsmiddel for varer og tjenester, på samme måte som vi betaler med NOK for varer og tjenester i den fysiske verdene.
+          <br>Andre ser på det som et investeringobjekt og forsøker å tjene penger på kryptovaluta gjennom avkastning. 
+          <br>Folk som er interessert i IT og blockchain-teknologi blir også trukket mot kryptovaluta da det er en moderne og ny teknologi.
+          </p>
         </div> 
+
         <div id="borderdiv">
           <div id="child">
-            <p style="color: white;">NBX, Norwegian Block Exchange, er en norsk kryptobørs som har som mål og være så brukervennlig som mulig og å gjøre krypto tilgjengelig for alle.
-                De har hovedkvarter i Oslo, men opererer i hele Norden.
+            <h2>Teknologien bak krypto</h2>
+            <p>Kryptovalutaer kjører på et distribuert offentlig system kalt Blockchain, 
+              en oversikt over alle transaksjoner som er oppdatert og holdt av valutainnehavere.
+              Enheter av kryptovaluta skapes gjennom en prosess som kalles mining, 
+              som innebærer å bruke datakraft til å løse kompliserte matematiske problemer som genererer kryptovaluta. 
+              Brukere kan også kjøpe valutaene fra meglere, og deretter lagre og bruke dem ved hjelp av kryptografiske lommebøker.
+              <br><br>
+              Hvis du eier kryptovaluta, eier du ikke noe du kan fysisk ta på. 
+              Det du eier er en nøkkel som lar deg flytte en verdi eller data fra en person til en annen uten en pålitelig tredjepart.
             </p>
           </div> 
+
+          <div id="child">
+            <h2>Typer kryptovaluta</h2>
+            <p>Kommer snart..
+            </p>
+          </div> 
+
+          <div id="child">
+            <h2>Hvordan kjøpe krypto</h2>
+            <p>Kommer snart..
+            </p>
+          </div> 
+
         </div>
 
         <div id="child">
@@ -101,6 +272,10 @@
       </div>
       <br><br><br><br><br>
     </div>
+
+
+    <!--FOOTER-->
+    
 
     <div id="footer">
       <p><br><br>Kryptovaluta innebærer høy risiko. <br>Ved bruk av lenkene ovenfor mottar både KryptoNord og du bonuser.</p> 

@@ -20,6 +20,12 @@ html {
     position: relative;
 }
 
+#header h1 {
+    margin: auto;
+    width: 55%;
+    color: rgb(44, 41, 63);
+}
+
 
 #header2 {
     width: 50%;
@@ -115,7 +121,7 @@ html {
     width: 50px;
     margin: auto;
     font-size: 18px;
-    margin-top: 320px;
+    margin-top: 300px;
     display: block;
 }
 
@@ -147,16 +153,15 @@ html {
 }
 
 #header {
+    margin-top: 170px;
     width: 100%; 
 }
 
 /*MENU CSS*/
 
-
 .slide li {
     list-style-type: none;
     width: 75px;
-
 }
 
 .slide li a {
@@ -199,11 +204,23 @@ nav {
 #touch:checked + .slide {height: 150px;} 
 /*END MENU CSS*/
 
+#wrapper {
+    width: 98.9vw;
+    background-color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 1920px) {        
+    #wrapper {
+        width: 100%;
+    }
+  }
+
 @media (max-width: 1334px) {        
     body {
         background-size: 1300px;
     }
-    h1 {
+    #header h1 {
         font-size: 25px;
     }
     #header p {
@@ -257,22 +274,9 @@ nav {
     }
   }
 
-#wrapper {
-    width: 100%;
-    background-color: white;
-    margin-top: 40px;
-}
-
 
 #child {
     margin-top: 200px;
-}
-
-#header h1 {
-    margin: auto;
-    width: 55%;
-    margin-top: 160px;
-    color: rgb(44, 41, 63);
 }
 
 #navul {
@@ -295,4 +299,6 @@ nav {
     text-align: center;
     text-decoration: none;
   }
+
+/*FOOTER*/
 
