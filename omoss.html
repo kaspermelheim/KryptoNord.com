@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>  
+    <meta charset="UTF-8">
+    <title>KryptoNord | Norske Kryptobørser</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Alt du trenger å vite om krypto, ulike kryptobørser og populære kryptovalutaer.">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  </head>
+
+  <body>
+
+    <ul id="navul"> 
+      <li class="navli" style="margin: 10px;">
+        <a href="index.html">
+          <img id="icon1" src="kryptonord_logo.png" alt="KryptoNord Logo">
+        </a>
+      </li>
+      <li class="navli" id="icontext">
+        <a href="index.html">KryptoNord</a>
+      </li>
+
+      <li class="navli" style="float:right; margin: 15px;">
+        <a target="_blank" href="https://discord.gg/fF8NFGXv9m">
+          <img id="icon2" src="discord_logo_box.png" alt="Discord Logo Small">
+        </a>
+      </li>
+
+      <li style="float:right; margin: 15px; ">
+        
+          <nav>
+
+            <label for="touch"><span id="menuspan"><img id="dropimg" src="dropdown_menu_button.png" alt="Dropdown Menu Button"></span></label>               
+            <input type="checkbox" id="touch"> 
+          
+            <ul class="slide">
+              <li><a href="index.html">&#127968; Hjem</a></li> 
+              <li><a href="Andre-Kryptobørser.html">&#128186; Andre børser</a></li>
+              <li><a href="hva_er_krypto.html"> &#10067; &nbsp;Hva er krypto</a></li>
+              <li><a href="omoss.html">&#128119; Om oss</a></li>
+            </ul>
+          
+          </nav> 
+        
+      </li>
+    </ul>
+
+    <div class="main">
+      <div class="d1"></div>
+      <div class="d2"</div>
+      <div class="d3"></div>
+      <div class="d4"></div>
+    </div>
+
+    <div id="header">
+      <h1>Om oss</h1>
+      <p id="headertext">Info om KryptoNord<br> og målet til <br>nettsiden.</p>
+      <img id="arrow" onclick="clicked()" src="downpng.png" alt="Arrow down button">
+    </div>
+
+
+
+    <div id="wrapper">
+      <div id="wrapper-2">  
+        <br>
+        <div id="child" style="margin-top: 300px;">
+          <img style="width: 160px; float: right;" src="verified_checkmark.png" alt="Blue Checkmark">
+          <h2 id="h2id">Kommer snart!</h2>
+          <br>
+          <p>Her vil det bli lagt ut masse bra info...</p>
+        </div> 
+        <div id="borderdiv">
+          <div id="child">
+            <p style="color: white;">NBX, Norwegian Block Exchange, er en norsk kryptobørs som har som mål og være så brukervennlig som mulig og å gjøre krypto tilgjengelig for alle.
+                De har hovedkvarter i Oslo, men opererer i hele Norden.
+            </p>
+          </div> 
+        </div>
+
+        <div id="child">
+          <h2>Trenger du hjelp til å komme i gang eller er det noe du lurer på?</h2><br>
+          <img id="d" src="discord_logo.png" alt="Discord Logo">
+          <iframe id="disc" src="https://discord.com/widget?id=852962963757203527&theme=dark"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        
+          <div>
+            <p id="disctext">I KryptoNord sin Discord server kan du få svar på alt du måtte lure på om krypto, norske kryptobørser nevnt ovenfor eller noe helt annet som du lurer på.<br><br>
+              Her kan du også prate med andre nordmenn i kryptogamet, og holde deg oppdatert med nyheter og endringer som kan være viktige å få med seg. <br><br>
+              Discord er en gratis platform for kommunikasjon og fildeling, og du kan bli medlem av grupper som handler om ting du interesserer deg for. <br><br></p>
+              <br><br>
+            <a target="_blank" href="https://discord.gg/fF8NFGXv9m">
+              <button class="button-36" role="button">Bli med</button>
+            </a>
+          </div> 
+          <br><br><br> 
+        </div>
+        <br><br><br>
+      </div>
+      <br><br><br><br><br>
+    </div>
+
+    <div id="footer">
+      <p><br><br>Kryptovaluta innebærer høy risiko. <br>Ved bruk av lenkene ovenfor mottar både KryptoNord og du bonuser.</p> 
+    </div>
+    
+    <script>
+      let h2 = document.getElementById("h2id");
+      function clicked() {
+        h2.scrollIntoView();
+      }
+    </script>
+  </body>
+</html>

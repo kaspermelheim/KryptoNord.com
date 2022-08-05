@@ -15,6 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 
+#header h1, #header p {
+    z-index: 50;
+    position: relative;
+}
+
 
 #header2 {
     width: 50%;
@@ -25,7 +30,7 @@ html {
 #footer {
     width: 100%;
     height: 130px;
-    color: rgb(247, 247, 247);
+    background: linear-gradient(110deg, #5b47c4 60%, #777beb 60%);
     margin-top: -20px;
     margin: auto;
     background-color: rgb(100, 99, 99);
@@ -141,6 +146,58 @@ html {
     display: none;
 }
 
+#header {
+    width: 100%; 
+}
+
+/*MENU CSS*/
+
+
+.slide li {
+    list-style-type: none;
+    width: 75px;
+
+}
+
+.slide li a {
+    text-decoration : none; 
+    color: white;
+    margin-left: -45px;
+    font-size: 14.5px;
+    text-shadow: 1.4px 1.4px #000000;
+}
+
+.slide li a:hover {
+    background: linear-gradient(110deg, #a99dd500 20%, #8259fa 80%);
+}
+
+nav {
+  position: absolute;
+  z-index: 100;
+  width : 75px; 
+  margin-left: -50px;
+}
+
+#menuspan {
+  padding : 5px;
+  cursor : pointer;
+  display: block;
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 5px;}
+
+#touch {position: fixed; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 150px;} 
+/*END MENU CSS*/
 
 @media (max-width: 1334px) {        
     body {
@@ -170,12 +227,26 @@ html {
     }
   }
 
+  #dropimg {
+    width: 30px;
+}
+
 @media (max-width: 750px) {        
     #icon1 {
         width: 30px;
     }
     #icon2 {
         width: 30px;
+    }
+    #dropimg {
+        width: 20px;
+    }
+    nav {
+        width : 75px;
+        margin-left: -40px;
+    }
+    .slide li a {
+        font-size: 13px;
     }
     #icontext {
         margin-top: 14px;
@@ -185,10 +256,6 @@ html {
         width: 85%;
     }
   }
-
-#header {
-    width: 100%; 
-}
 
 #wrapper {
     width: 100%;
@@ -216,15 +283,16 @@ html {
     background-color: none;
   }
   
-#navul li {
+.navli {
     float: left;
     list-style-type: none;
   }
   
-#navul li a {
+.navli a {
     display: block;
     color: rgb(63, 88, 58);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
   }
+
