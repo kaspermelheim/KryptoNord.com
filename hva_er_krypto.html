@@ -11,178 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <style>
-
-      h1 {
-        font-size: 30px;
-        }
-      h2 {
-        font-size: 30px;
+      body {
+        background-image: url(bitcoin-g0dae76884_1920.jpg);
+     
       }
-
-      @media (max-width: 1334px) {        
-            h2 {
-              font-size: 25px;
-            }
-          }
-
-        @media (max-width: 1334px) {        
-            body {
-                background-size: 1300px;
-            }
-            #header h1 {
-                font-size: 25px;
-            }
-            #header p {
-                font-size: 15px;
-            }
-            #disc {
-                width: 250px;
-                height: 250px;
-                margin-left: 85px;
-            }
-          }
-
-      .main {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        
-      }
-      .d1 {
-        position: absolute;
-        background-image: url(stock_market.jpg);
-        background-size: 1200px 750px;
-      
-        height: 25vh;
-        width: 15vw;
-      
-        background-position: 0 50%;
-      
-        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-        top: 50%;
-        left: 10vw;
-        transform: translateY(-50%);
-        z-index: 2;
-        animation: dd1 10s 1, dd12 10s 1;
-        animation-delay: 4s, 14s;
-      }
-      .d2 {
-        position: absolute;
-        background-image: url(stock_market.jpg);
-        background-size: 1200px 750px;
-
-        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-      
-        height: 50vh;
-        width: 20vw;
-      
-        background-position: -10vw 50%;
-        left: 20vw;
-      
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        animation: dd2 10s 2;
-        animation-delay: 4s;
-      }
-      .d3 {
-        position: absolute;
-        background-image: url(stock_market.jpg);
-        background-size: 1200px 750px;
-        overflow: hidden;
-      
-        height: 65vh;
-        width: 30vw;
-        left: 17vw;
-        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-        background-position: -35vw 50%;
-      
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 3;
-        animation: dd3 10s 2;
-        animation-delay: 4s;
-      }
-      .d4 {
-        position: absolute;
-        overflow: hidden;
-        background-image: url(stock_market.jpg);
-        background-size: 1200px 750px;
-
-        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-      
-        height: 80vh;
-        width: 20vw;
-        left: 45vw;
-        background-position: -70vw 50%;
-      
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        animation: dd4 10s 2;
-        animation-delay: 4s;
-      }
-      
-      @keyframes dd1 {
-        0% {
-        }
-        50% {
-          width: 60vw;
-        }
-      }
-      @keyframes dd12 {
-        0% {
-        }
-        50% {
-          background-position: Calc(0vw - 40px) 50%;
-        }
-      }
-      @keyframes dd2 {
-        0% {
-        }
-        50% {
-          background-position: Calc(-10vw - 40px) 50%;
-        }
-      }
-      @keyframes dd3 {
-        0% {
-        }
-        50% {
-          background-position: Calc(-35vw - 40px) 50%;
-        }
-      }
-      @keyframes dd4 {
-        0% {
-        }
-        50% {
-          background-position: Calc(-70vw - 40px) 50%;
-        }
-      }
-
-      #child {
-        margin-top: 13vw;
-      }
-
-
-      @media (max-width: 1350px) {        
-          #child {
-            margin-top: 20vw;
-          }
-        }
-
-        @media (max-width: 750px) {        
-          #child {
-            margin-top: 35vw;
-          }
-        }
-
-      @media (min-width: 1720px) {        
-          #child {
-            margin-top: 25vw;
-          }
-        }
-  
     </style>
   </head>
 
@@ -195,7 +29,7 @@
         </a>
       </li>
       <li class="navli" id="icontext">
-        <a href="index.html">KryptoNord</a>
+        <a style="text-decoration: none;color: white;" href="index.html">KryptoNord</a>
       </li>
 
       <li class="navli" style="float:right; margin: 15px;">
@@ -208,7 +42,7 @@
         
           <nav>
 
-            <label for="touch"><span id="menuspan"><img id="dropimg" src="dropdown_menu_button.png" alt="Dropdown Menu Button"></span></label>               
+            <label for="touch"><span id="menuspan"><img id="dropimg" src="menu-icon.png" alt="Dropdown Menu Button"></span></label>               
             <input type="checkbox" id="touch"> 
           
             <ul class="slide">
@@ -221,16 +55,9 @@
       </li>
     </ul>
 
-    <div class="main">
-      <div class="d1"></div>
-      <div class="d2"</div>
-      <div class="d3"></div>
-      <div class="d4"></div>
-    </div>
-
     <div id="header">
         <h1>Intro til krypto</h1>
-        <p id="headertext">Alt du bør vite om <br>kryptovaluta.</p>
+        <p id="headertext">Alt du bør vite om kryptovaluta.</p>
         <img id="arrow" onclick="clicked()" src="downpng.png" alt="Arrow down button">
     </div>
 
@@ -336,7 +163,7 @@
                         <li><a target="_blank" href="https://app.nbx.com/login/signup?referral=35CZMPjgvg">NBX</a></li>
                         <li><a target="_blank" href="https://firi.com/affiliate?referral=f99f3388">Firi</a></li>
                         <li><a target="_blank" href="https://bitnord.no/referral/nordmenn">Bitnord</a></li>
-                          <li style="font-size: 11px;">Annonse: Krypto innebærer høy risko. <br>Du må være 18 år for å registrere deg.</li>
+                          <li id="disclaimer">Annonse: Krypto innebærer høy risko. <br>Du må være 18 år for å registrere deg.</li>
                       </ul>
                   </div>
                   <div class="col-sm-4 col-md-3 item">

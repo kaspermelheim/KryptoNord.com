@@ -36,7 +36,7 @@ html {
 #footer {
     width: 100%;
     height: 130px;
-    background: linear-gradient(110deg, #5b47c4 60%, #777beb 60%);
+    background: linear-gradient(110deg, #4d52e6 100%, #777beb 60%);
     margin-top: -20px;
     margin: auto;
     background-color: rgb(100, 99, 99);
@@ -121,7 +121,7 @@ html {
     width: 50px;
     margin: auto;
     font-size: 18px;
-    margin-top: 300px;
+    margin-top: 310px;
     display: block;
 }
 
@@ -192,7 +192,7 @@ html {
 nav {
   position: absolute;
   z-index: 100;
-  width : 120px; 
+  width : 110px; 
   margin-left: -50px;
 }
 
@@ -206,6 +206,11 @@ nav {
     opacity: 0.5;
 }
 
+#icon2 {
+  display: block;
+  position: relative;
+  z-index: 101;
+}
 #icon2:hover {
     opacity: 0.5;
 }
@@ -231,69 +236,9 @@ nav {
     margin-top: 40px;
 }
 
-@media (max-width: 1920px) {        
-    #wrapper {
-        width: 100%;
-    }
-  }
-
-@media (max-width: 1334px) {        
-    body {
-        background-size: 1300px;
-    }
-    #header h1 {
-        font-size: 25px;
-    }
-    #header p {
-        font-size: 15px;
-    }
-    #disc {
-        width: 250px;
-        height: 250px;
-        margin-left: 85px;
-    }
-  }
-
-  @media (max-width: 1266px) {        
-    #disc {
-        display: none;
-    }
-    #d {
-        display: block;
-        width: 100px;
-        margin: auto;
-    }
-  }
-
   #dropimg {
     width: 30px;
 }
-
-@media (max-width: 750px) {        
-    #icon1 {
-        width: 30px;
-    }
-    #icon2 {
-        width: 30px;
-    }
-    #dropimg {
-        width: 20px;
-    }
-    nav {
-        width : 110px;
-        margin-left: -40px;
-    }
-    .slide li a {
-        font-size: 13px;
-    }
-    #icontext {
-        margin-top: 14px;
-        font-size: 12px;
-    }
-    #wrapper-2 {
-        width: 85%;
-    }
-  }
 
 
 #child {
@@ -321,12 +266,17 @@ nav {
     text-decoration: none;
   }
 
+.navli a:hover {
+  color: rgb(63, 88, 58);
+}
+
 /*FOOTER*/
 
 .footer-clean {
     padding:50px 0;
-    background-color:#fff;
-    color:#4b4c4d;
+    background: linear-gradient(110deg, #656aef 75%, #777beb 60%);
+    
+    color:#d6d6d6;
   }
   
   .footer-clean h3 {
@@ -411,3 +361,98 @@ nav {
   
   /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
 
+
+#disclaimer {
+  font-size: 11px;
+}
+
+#wrapper h2 {
+  margin-top: 20px;
+}
+
+#header h1, #wrapper h2 {
+  font-size: 30px;
+}
+/**MEDIA CODE**/
+
+@media (min-width: 1800px) {
+  #wrapper p {
+    font-size: 20px;
+  }
+  #wrapper li {
+    font-size: 19px;
+  }
+  #footer p {
+    font-size: 18px;
+  }
+   .footer-clean li {
+    font-size: 20px;
+   }
+  #disclaimer {
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 1920px) {        
+  #wrapper {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1334px) {        
+  body {
+      background-size: 1300px;
+  }
+  #header h1 {
+      font-size: 25px;
+  }
+  #wrapper h2 {
+    font-size: 25px;
+  }
+  #header p {
+      font-size: 15px;
+  }
+  #disc {
+      width: 250px;
+      height: 250px;
+      margin-left: 85px;
+  }
+}
+
+@media (max-width: 1266px) {        
+  #disc {
+      display: none;
+  }
+  #d {
+      display: block;
+      width: 100px;
+      margin: auto;
+  }
+}
+
+@media (max-width: 750px) {        
+  #icon1 {
+      width: 30px;
+  }
+  #icon2 {
+      width: 30px;
+  }
+  #dropimg {
+      width: 20px;
+      margin-top: -10px;
+  }
+  nav {
+      width : 110px;
+      margin-left: -40px;
+  }
+  .slide li a {
+      font-size: 13px;
+  }
+  #icontext {
+      margin-top: 14px;
+      font-size: 12px;
+  }
+  #wrapper-2 {
+      width: 85%;
+  }
+}
