@@ -216,6 +216,10 @@ nav {
     opacity: 0.5;
 }
 
+.wrapperimg {
+  width: 350px; display: block; margin: auto;
+}
+
 .slide {
   clear:both;
   width:100%;
@@ -432,7 +436,10 @@ nav {
   }
 }
 
-@media (max-width: 750px) {        
+@media (max-width: 750px) {   
+  .wrapperimg {
+    width: 260px;
+  }     
   #icon1 {
       width: 30px;
   }
@@ -456,5 +463,11 @@ nav {
   }
   #wrapper-2 {
       width: 85%;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapperimg {
+    width: 230px;
   }
 }
