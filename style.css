@@ -97,8 +97,8 @@ html {
 }
 
 #icon1 {
-    width: 110px;
-    border-radius: 2px;
+    width: 50px;
+    border-radius: 3px;
 }
 
 #icon2 {
@@ -193,14 +193,20 @@ html {
 nav {
   position: absolute;
   z-index: 100;
-  width : 110px; 
+  width : 135px; 
   margin-left: -50px;
 }
 
 #menuspan {
-  padding : 5px;
+  background-color: rgb(114, 136, 169, 0.5);
+  width: 135px;
+  height: 50px;
+  margin-top: -15px;
+  padding : 10px;
   cursor : pointer;
   display: block;
+  border-bottom: 7px solid rgb(114, 136, 169);
+  border-left: #655e8d 7px solid;
 }
 
 #dropimg:hover {
@@ -224,14 +230,18 @@ nav {
   clear:both;
   width:100%;
   height:0px;
-  background-color: rgba(255, 255, 255, 0.456);
+  background-color: rgb(114, 136, 169, 0.5);
   overflow: hidden;
   transition: height .4s ease;
 }
 
 .slide li {padding : 5px;}
 
-#touch {position: fixed; opacity: 0; height: 0px;}    
+#touch {
+  position: fixed; 
+  opacity: 0; 
+  height: 0;
+}    
 
 #touch:checked + .slide {height: 150px;} 
 /*END MENU CSS*/
@@ -244,6 +254,7 @@ nav {
 
   #dropimg {
     width: 30px;
+    float: right;
 }
 
 
@@ -441,17 +452,18 @@ nav {
     width: 260px;
   }     
   #icon1 {
-      width: 80px;
+      width: 40px;
   }
   #icon2 {
       width: 30px;
   }
   #dropimg {
-      width: 20px;
-      margin-top: -10px;
+      width: 25px;
+      margin-right: 5px;
+      margin-top: 3px;
   }
   nav {
-      width : 110px;
+      width : 135px;
       margin-left: -40px;
   }
   .slide li a {
